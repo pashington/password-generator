@@ -1,0 +1,126 @@
+*{
+    font-family: "JetBrains Mono";
+    text-align: center;
+    color:white;
+}
+body{
+    background:linear-gradient(to right, #662D8C, #ED1E79);
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 800px;
+}
+.section{
+    background-color: rgba(0,0,0,0.3);
+    padding: 0 10% 0 10%;
+    border-radius: 20px;
+
+}
+h1{
+    margin-bottom: 9px;
+}
+input[type="text"],input[type="number"]{
+    border-radius: 5px;
+    border:none;
+    width:340px;
+    height: 31px;
+    font-size: 16px;
+    margin-bottom: 9px;
+    color: black;
+}
+input[type="submit"]{
+    width:345px;
+    border-radius: 55px;
+    border:none;
+    height: 31px;
+    background-color: #9900FF;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    color:white;
+
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input[type="checkbox"] {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #adadad;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.parameter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+P{
+    font-size: 20px;
+    margin:7px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: #8c58ae;
+}
+
+input[type="checkbox"]:focus + .slider {
+    box-shadow: 0 0 1px #8c58ae;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;}
+.parameter input{
+    margin:0;
+    width:50px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select{
+    color:black;
+    width:54px;
+    border:none;
+    border-radius: 5px;
+    height: 30px;
+}
+option{
+    color:black;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>Password Generator</h1>
+            <input type="text" value="your password there..." readonly="readonly" id="password-input">
+            <div class="settings">
+                <div class="parameter">
+                    <p>Capital letters</p>
+                    <label class="switch">
+                        <input type="checkbox" id="capital-letters-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="parameter">
+                    <p>Only numbers</p>
+                    <label class="switch">
+                        <input type="checkbox" id="only-numbers-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="parameter">
+                    <p>Passphrase</p>
+                    <label class="switch">
+                        <input type="checkbox" id="passphrase-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="parameter">
+                    <p>Signs count</p>
+                    <input type="number" value="10" id="nums-input">
+                </div>
+                <div class="parameter">
+                    <p>Word separator</p>
+                    <select id="separator-word" name="separator">
+                        <option value="~">~</option>
+                        <option value="-">-</option>
+                        <option value="=">=</option>
+                        <option value=".">.</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" id="generate-btn" value="Generate password!">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
